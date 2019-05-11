@@ -49,3 +49,16 @@ $ git merge --no-ff [BRANCH_NAME]
 5. `feature branch` 푸쉬 후 pull request
 6. pull request 확인 후 `develop branch`에 merge
 7. merge 후 develop pull
+
+##### 명령어로 자세히 정리해보자면
+
+- git checkout -b feature/{feature_name} 브랜치를 만든다.
+- push하기전에!!! 작업내용 모두 커밋완료 후!
+- feature브랜치에서 git rebase develop
+- 위에서 중요한 점!!! develop이 최신인가!! 오리진에 있는걸 Pull받아서 로컬브랜치를 최신으로 업데이트 후 feature 브랜치에 rebase
+  요약: develop브랜치에서 git pull받자!
+- git checkout develop
+- git merge --no-ff feature/{feature_name}
+- git push (이것도 develop 브랜치에서)
+
+
