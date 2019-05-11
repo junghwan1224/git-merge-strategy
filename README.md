@@ -50,7 +50,9 @@ $ git merge --no-ff [BRANCH_NAME]
 6. pull request 확인 후 `develop branch`에 merge
 7. merge 후 develop pull
 
-##### 명령어로 자세히 정리해보자면
+
+
+#### 명령어로 자세히 정리해보자면
 
 - git checkout -b feature/{feature_name} 브랜치를 만든다.
 - push하기전에!!! 작업내용 모두 커밋완료 후!
